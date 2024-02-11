@@ -1,0 +1,16 @@
+.AppEntete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navList{
+    margin: 20px;
+}
+.AppLogoK{
+    margin: 20px;
+}
