@@ -1,7 +1,7 @@
 import logoK from './logoKasa.png';
-import '../style/AppHeader.css';
+import '../style/banner.scss';
 
-function AppHeader() {
+function Banner() {
     return (
       <div className="AppHeader">
         <header className="AppEntete">
@@ -21,4 +21,4 @@ function AppHeader() {
     );
   }
 
-  export default AppHeader;
+  export default Banner;
