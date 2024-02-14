@@ -1,16 +1,18 @@
-.AppEntete {
+$background-image-home: url('../paysage-mer-terre.jpg');
+$background-image-about: url('../paysage-montagne-foret.jpg');
+
+.banner {
+    background-image: url('../paysage-mer-terre.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    &.about {
+        background-image: $background-image-about;
+      }
+}
+.bannerTxt {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.navList{
-    margin: 20px;
-}
-.AppLogoK{
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
 }

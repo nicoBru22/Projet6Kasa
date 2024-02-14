@@ -1,24 +1,7 @@
-import logoK from './logoKasa.png';
-import '../style/banner.scss';
+import '../style/Banner.scss';
 
-function Banner() {
-    return (
-      <div className="AppHeader">
-        <header className="AppEntete">
-          <img src={logoK} className="AppLogoK" alt="logo de Kasa" />
-          <div>
-            <nav className="menu">
-                <li className="navList">
-                    Accueil
-                </li>
-                <li className="navList">
-                    A propos
-                </li>
-            </nav>
-          </div>
-        </header>
-      </div>
-    );
-  }
+function Banner({ isAboutPage }) {
+    return <div className={`banner ${isAboutPage ? 'about' : ''}`}></div>;
+}
 
-  export default Banner;
+export default Banner;
