@@ -2,17 +2,29 @@ $background-image-home: url('../paysage-mer-terre.jpg');
 $background-image-about: url('../paysage-montagne-foret.jpg');
 
 .banner {
-    background-image: url('../paysage-mer-terre.jpg');
+    background-image: $background-image-home;
     background-size: cover;
     background-position: center;
     height: 170px;
+
+    &.home {
+        filter: brightness(50%);
+        .accroche {
+            filter: none;
+        }
+    }
     &.about {
         background-image: $background-image-about;
+        .accroche {
+            display: none;
+        }
       }
 }
-.bannerTxt {
+.accroche {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 170px;
+    height: 100%;
+    color: white;
+    font-size: 40px;
 }

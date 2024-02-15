@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import '../style/Collapse.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-function Collapse({ titre, contenu }) {
+function Collapse({ titreCollapse, contenu,}) {
     const [collapsed, setCollapsed] = useState(true);
   
     const toggleCollapse = () => {
@@ -8,11 +11,18 @@ function Collapse({ titre, contenu }) {
     };
   
     return (
-      <div>
-        <button className='CollapseButton' onClick={toggleCollapse}>{collapsed ? `${titre}` : `${titre}`}</button>
+      <div className='collapseGlobal'>
+        <button className='CollapseButton' onClick={toggleCollapse}>
+          <div>{titreCollapse}</div>
+          <div>{collapsed ? (
+            <FontAwesomeIcon icon={faChevronDown} />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} />
+          )}
+          </div>
+        </button>
         {!collapsed && (
           <div>
-            {/* Contenu du collapse */}
             <p>{contenu}</p>
           </div>
         )}
