@@ -6,6 +6,7 @@ $background-image-about: url('../paysage-montagne-foret.jpg');
     background-size: cover;
     background-position: center;
     height: 170px;
+    padding: 20px;
 
     &.home {
         filter: brightness(50%);
