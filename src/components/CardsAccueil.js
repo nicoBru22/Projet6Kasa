@@ -1,6 +1,6 @@
 import '../style/CardsAccueil.scss';
 
-function Cards({cover, title}) {
+function CardsAccueil({cover, title}) {
     return(
         <div className="cards">
             <div className="coverCards">
@@ -13,4 +13,4 @@ function Cards({cover, title}) {
     )
 }
 
-export default Cards;
+export default CardsAccueil;

@@ -1,7 +1,7 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from './Header';
+import Footer from './Footer';
 import Banner from './Banner';
-import AboutPresentation from '../components/AboutPresentation';
+import AboutPresentation from './AboutPresentation';
 
 function Apropos() {
     return(

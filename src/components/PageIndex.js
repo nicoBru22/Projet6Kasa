@@ -1,6 +1,6 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Cards from '../components/logements';
+import Header from './Header';
+import Footer from './Footer';
+import CardsAccueil from './logements';
 import Banner from './Banner';
 
 function HomePage() {
@@ -8,7 +8,7 @@ function HomePage() {
         <div className="HomePage">
             <Header />
             <Banner isAboutPage={false} />
-            <Cards />
+            <CardsAccueil />
             <Footer />
         </div>
     )
