@@ -5,12 +5,14 @@ import Banner from './Banner';
 
 function HomePage() {
     return(
-        <div className="HomePage">
-            <Header />
-            <Banner isAboutPage={false} />
-            <CardsAccueil />
-            <Footer />
-        </div>
+        <html className="HomePage">
+            <body>
+                <Header />
+                <Banner isAboutPage={false} />
+                <CardsAccueil />
+                <Footer />
+            </body>
+        </html>
     )
 }
 

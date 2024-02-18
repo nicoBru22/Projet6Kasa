@@ -1,6 +1,7 @@
 import '../style/CardsAccueil.scss';
+import { Link } from 'react-router-dom';
 
-function CardsAccueil({cover, title}) {
+function CardsAccueil({cover, title, id}) {
     return(
         <div className="cards">
             <div className="coverCards">
@@ -9,6 +10,12 @@ function CardsAccueil({cover, title}) {
             <div className="titreLocation">
                 {title}
             </div>
+            <div>
+                id du logement {id}
+            </div>
+            <li className="details">
+            <Link to={`./Logement/${id}`}>Plus de détails</Link>
+            </li>
         </div>
     )
 }
