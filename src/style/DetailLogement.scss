@@ -1,0 +1,52 @@
+.enteteLogement {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.tagRates {
+    display: flex;
+    justify-content: space-between;
+}
+.collapseLogement {
+    display: flex;
+    justify-content: space-between;
+}
+.titreLogement {
+    color: #FF6060;
+    font-size: 30px;
+}
+.lieuLogement {
+    display: flex;
+}
+.nomLoueur {
+    color: #FF6060;
+    width: 90px;
+    align-items: center;
+    display: flex;
+}
+.loueur {
+    display: flex;
+}
+.imageLoueur {
+    width: 60px;
+    border-radius: 30px;
+}
+.tag {
+    background-color: #FF6060;
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.detailLogement {
+    padding: 40px;
+}
+.carousel {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
