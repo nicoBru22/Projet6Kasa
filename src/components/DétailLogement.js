@@ -6,6 +6,14 @@ import Carousel from "./Slideshow";
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
+function genererEtoiles(note) {
+    const etoiles = [];
+    for (let i = 0; i < note; i++) {
+        etoiles.push(<div key={i} className="etoile">★</div>);
+    }
+    return etoiles;
+}
+
 function DetailLogement() {
     let { id } = useParams();
     const navigate = useNavigate();
@@ -35,9 +43,7 @@ function DetailLogement() {
                 </div> 
                 <div className="tagRates">
                     <div className="tags">
-                        {logement.tags.map((tag, index) => (
-                            <span className="tag" key={index}>{tag}</span>
-                        ))}
+                    {genererEtoiles(logement.rating)}
                     </div>
                     <div className="rates">{logement.rating}</div>
                 </div>
@@ -49,5 +55,7 @@ function DetailLogement() {
         </div>
     );
 }
+
+
 
 export default DetailLogement;

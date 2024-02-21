@@ -10,10 +10,10 @@ function Header() {
           <div>
             <nav className="menu">
                 <li className="navList">
-                    <Link to="/">Accueil</Link>
+                    <Link to="/" className='routeEnTete'>Accueil</Link>
                 </li>
                 <li className="navList">
-                <Link to="./Apropos">A propos</Link>
+                  <Link to="./Apropos" className='routeEnTete'>A propos</Link>
                 </li>
             </nav>
           </div>

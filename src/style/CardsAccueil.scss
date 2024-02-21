@@ -1,15 +1,16 @@
 .cards{
     width: 200px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #FF6060;
     margin: 15px;
     height: 200px;
+    text-decoration: none;
 }
 .imageCards{
     width: 200px;
     border-radius: 10px;
-    height: 110px;
+    height: 100%;
 }
 .lesLogements{
     display: flex;
@@ -19,7 +20,10 @@
 .titreLocation {
     display: flex;
     align-items: end;
-    height: 80px;
-    text-decoration: none !important;
+    height: 40%;
     color: white;
+    text-align: left;
+}
+.coverCards {
+    height: 60%;
 }

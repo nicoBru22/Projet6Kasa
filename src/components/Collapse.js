@@ -13,7 +13,7 @@ function Collapse({ titreCollapse, contenu,}) {
     return (
       <div className='collapseGlobal'>
         <button className='CollapseButton' onClick={toggleCollapse}>
-          <div>{titreCollapse}</div>
+          <div className='titreCollapse'>{titreCollapse}</div>
           <div>{collapsed ? (
             <FontAwesomeIcon icon={faChevronDown} />
           ) : (

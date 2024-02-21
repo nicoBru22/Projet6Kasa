@@ -8,10 +8,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    list-style-type: none;
 }
 .navList{
     margin: 20px;
 }
 .AppLogoK{
     margin: 20px;
+}
+.routeEnTete {
+    text-decoration: none;
+    color: inherit;
+}
+.routeEnTete:hover {
+    border-bottom: 2px solid;
 }
