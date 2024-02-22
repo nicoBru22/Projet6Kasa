@@ -6,10 +6,12 @@ import AboutPresentation from './AboutPresentation';
 function Apropos() {
     return(
         <div>
-        <Header />
-        <Banner isAboutPage={true}/>
-        <AboutPresentation />
-        <Footer />
+            <div className='HBAapropos' style={{ padding: '20px' }}>
+                <Header />
+                <Banner isAboutPage={true}/>
+                <AboutPresentation />
+            </div>
+            <Footer />
         </div>
     )
 }

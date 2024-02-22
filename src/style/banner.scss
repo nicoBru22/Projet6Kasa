@@ -1,31 +1,40 @@
-$background-image-home: url('../paysage-mer-terre.jpg');
-$background-image-about: url('../paysage-montagne-foret.jpg');
-
 .banner {
-    background-image: $background-image-home;
+    position: relative;
     background-size: cover;
     background-position: center;
     height: 170px;
     padding: 20px;
+    border-radius: 10px;
 
-    &.home {
-        filter: brightness(50%);
-        .accroche {
-            filter: none;
+    &.pageIndex {
+        background-image: url('../paysage-mer-terre.jpg');
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            border-radius: 10px;
         }
     }
-    &.about {
-        background-image: $background-image-about;
+    &.pageApropos {
+        background-image: url('../paysage-montagne-foret.jpg');
         .accroche {
             display: none;
         }
-      }
+    }
 }
+
 .accroche {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 40px;
+    z-index: 2;
+    width: 100%;
 }

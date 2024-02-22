@@ -39,7 +39,14 @@
   .pictureLogement {
     display: block;
     width: 100%;
-    height: 450px;
+    height: 500px;
     object-fit: cover;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .pictureLogement {
+    height: 250px;
+  }
 }
   

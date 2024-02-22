@@ -13,7 +13,7 @@ function Header() {
                     <Link to="/" className='routeEnTete'>Accueil</Link>
                 </li>
                 <li className="navList">
-                  <Link to="./Apropos" className='routeEnTete'>A propos</Link>
+                  <Link to="/Apropos" className='routeEnTete'>A propos</Link>
                 </li>
             </nav>
           </div>

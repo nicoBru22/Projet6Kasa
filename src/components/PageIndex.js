@@ -7,9 +7,11 @@ function HomePage() {
     return(
         <html className="HomePage">
             <body>
-                <Header />
-                <Banner isAboutPage={false} />
-                <CardsAccueil />
+                <div className='HBCindex' style={{ padding: '20px' }}>
+                    <Header />
+                    <Banner isAboutPage={false} />
+                    <CardsAccueil />
+                </div>
                 <Footer />
             </body>
         </html>

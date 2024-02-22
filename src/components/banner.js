@@ -1,12 +1,13 @@
 import '../style/Banner.scss';
 
 function Banner({ isAboutPage }) {
-    return <div className={`banner ${isAboutPage ? 'about' : 'home'}`}>
-        <div className={`accroche ${isAboutPage ? 'about' : ''}`}>
-            Chez vous, partout et ailleurs
-        </div>
-
-    </div>;
+    return <div>
+                <div className={`banner ${isAboutPage ? 'pageApropos' : 'pageIndex'}`}>
+                    <div className={`accroche ${isAboutPage ? 'pageApropos' : ''}`}>
+                        Chez vous, partout et ailleurs
+                    </div>
+                </div>;
+            </div>
 }
 
 export default Banner;
