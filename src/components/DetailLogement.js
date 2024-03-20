@@ -27,7 +27,7 @@ function DetailLogement({logement}) {
                         <div className="profilLoueur">
                             <div className="loueur">
                                 <div className="nomLoueur">{logement.host.name}</div>
-                                <img className="imageLoueur" src={logement.host.picture} alt="logo du loueur" />
+                                <img className="imageLoueur" src={logement.host.picture} title={logement.host.name} alt="logo du loueur" />
                             </div>
                             <div className="rates">{genererEtoiles(logement.rating)}</div>
                         </div>

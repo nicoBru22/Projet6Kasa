@@ -1,4 +1,4 @@
-import logoK from './logoKasa.png';
+import logoK from '../images/logoKasa.png';
 import '../style/Header.scss';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ function Header() {
     return (
       <div className="AppHeader">
         <header className="AppEntete">
-          <img src={logoK} className="AppLogoK" alt="logo de Kasa" />
+          <img src={logoK} className="AppLogoK" alt="logo de Kasa" title='Logo de Kasa' />
           <div>
             <nav className="menu">
                 <li className="navList">

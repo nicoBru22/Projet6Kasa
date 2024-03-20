@@ -19,7 +19,7 @@ const Carousel = ({ images }) => {
       <button className='prevButton slideButton' onClick={goToPrevSlide}>
       <FontAwesomeIcon icon={faChevronLeft} />
       </button>
-      <img className='pictureLogement' src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
+      <img className='pictureLogement' src={images[currentIndex]} alt={`Slide ${currentIndex}`} title='Image du logement' />
       <button className='nextButton slideButton' onClick={goToNextSlide}>
       <FontAwesomeIcon icon={faChevronRight} />
       </button>

@@ -5,7 +5,7 @@ function CardsAccueil({cover, title, id}) {
     return(
         <Link to={`./Logement/${id}`} className="cards">
                 <div className="coverCards">
-                    <img src={cover} alt={title} className="imageCards" />
+                    <img src={cover} alt={title} title={title} className="imageCards" />
                 </div>
                 <div className="titreLocation">
                     {title}
