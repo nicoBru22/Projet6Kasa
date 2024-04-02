@@ -6,7 +6,7 @@ function Banner({ isAboutPage }) {
                     <div className={`accroche ${isAboutPage ? 'pageApropos' : ''}`}>
                         Chez vous, partout et ailleurs
                     </div>
-                </div>;
+                </div>
             </div>
 }
 
