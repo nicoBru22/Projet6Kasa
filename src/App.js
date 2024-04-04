@@ -19,7 +19,6 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/apropos" element={<Apropos />} />
           <Route path="/logement/:id" element={<PageLogement />} />
-          <Route path="/logement/*" element={<PageError />} />
           <Route path="/*" element={<PageError />} />
         </Routes>
       </Router>

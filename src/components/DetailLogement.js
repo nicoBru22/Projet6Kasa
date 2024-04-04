@@ -35,7 +35,16 @@ function DetailLogement({logement}) {
                 </div> 
                 <div className="collapseLogement">
                     <Collapse className="collapseDE" titreCollapse="Description" contenu={logement.description}/>
-                    <Collapse className="collapseDE" titreCollapse="Equipements" contenu={logement.equipments}/>
+                    <Collapse className="collapseDE" titreCollapse="Equipements" contenu={
+                        <div>
+                            {logement.equipments.map((equipement) => (
+                            <React.Fragment key={equipement}>
+                                {equipement},                                
+                                <br />
+                            </React.Fragment>
+                            ))}
+                        </div>
+                        }/>
                 </div>
             </div>
         </div>

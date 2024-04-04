@@ -1,3 +1,12 @@
+.collapseGlobal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .CollapseButton {
     width: 100%;
     display: flex;
@@ -8,15 +17,46 @@
     height: 35px;
     align-items: center;
     border-radius: 10px;
+    padding: 0 15px;
+    border: none;
+    cursor: pointer;
 }
-.collapseGlobal {
+
+.iconeConteneur {
+    transition: transform 0.3s;
+}
+
+.contenuCollapse {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 48%;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    text-align: justify;
+    animation: slidein 0.5s linear;
 }
+
+.divContenuCollapse {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+@keyframes slidein {
+    from {
+      margin-top: -50px;
+      height: 0%;
+    }
+  
+    to {
+      mergin-top: 0%;
+      height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
 .aboutPresentation {
     display: flex;
     flex-direction: column;

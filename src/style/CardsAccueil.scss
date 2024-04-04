@@ -6,11 +6,15 @@
     margin: 15px;
     height: 200px;
     text-decoration: none;
-}
+} 
 .imageCards{
     width: 200px;
     border-radius: 10px;
     height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
 }
 .lesLogements{
     display: flex;
@@ -18,12 +22,12 @@
     justify-content: center;
 }
 .titreLocation {
-    display: flex;
-    align-items: flex-end;
-    height: 40%;
     color: white;
     text-align: left;
+    position: absolute;
+    bottom: 0;
 }
 .coverCards {
-    height: 60%;
+    height: 100%;
+    position: relative;
 }
